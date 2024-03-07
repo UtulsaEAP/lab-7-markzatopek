@@ -18,7 +18,8 @@ def courseGrade():
     
     grade_info = []
     for line in lines:
-        grade_info.append(line.split("\t"))
+        if line != "": # Unknown Index Issues, This Might Fix It
+            grade_info.append(line.split("\t"))
     
     midterm1_avg = 0
     midterm2_avg = 0
