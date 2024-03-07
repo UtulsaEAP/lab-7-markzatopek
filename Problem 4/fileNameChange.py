@@ -7,12 +7,7 @@ def fileNameChange():
     new_names = []
     for name in file_names:
         name.rstrip("\n")
-        new_names.append(name[:-10] + "_info.txt")
-    
-    loaded_file = open(file, "w")
-    for name in new_names:
-        loaded_file.write(name + "\n")
-    loaded_file.close()
+        print(name[:-10] + "_info.txt")
 
     return
 

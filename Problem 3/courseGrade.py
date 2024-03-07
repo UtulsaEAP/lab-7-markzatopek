@@ -38,6 +38,8 @@ def courseGrade():
     
     report = open("report.txt", "w")
     for student in grade_info:
+        for i in range(2, 5):
+            student[i] = str(student[i])
         report.write("\t".join(student))
     report.write(f"Averages: midterm1 {midterm1_avg}, midterm2 {midterm2_avg}, final {final_avg}")
     report.close()
