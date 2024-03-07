@@ -25,6 +25,8 @@ def courseGrade():
     final_avg = 0
     
     for student in grade_info:
+        for i in range(2, 5):
+            student[i] = int(student[i])
         student.append(get_letter_grade((student[2]+student[3]+student[4])/3))
         midterm1_avg += student[2]
         midterm2_avg += student[3]
