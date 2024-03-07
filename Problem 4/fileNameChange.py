@@ -7,7 +7,7 @@ def fileNameChange():
     new_names = []
     for name in file_names:
         name = name.rstrip("\n")
-        print(name[:-10] + "_info.txt")
+        print(name.split("_")[0] + "_info.txt")
 
     return
 
