@@ -23,7 +23,8 @@ def wordInRange():
     loaded_file.close()
     
     for word in words:
-        word = word[:-1]
+        
+        word = word.rstrip("\n")
         if compare_words(word, word1, "lower") and compare_words(word, word2):
             word += " - in range"
         else:

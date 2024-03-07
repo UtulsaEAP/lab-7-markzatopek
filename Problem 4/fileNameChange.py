@@ -10,7 +10,7 @@ def fileNameChange():
     
     loaded_file = open(file, "w")
     for name in new_names:
-        loaded_file.write(name)
+        loaded_file.write(name + "\n")
     loaded_file.close()
 
     return
